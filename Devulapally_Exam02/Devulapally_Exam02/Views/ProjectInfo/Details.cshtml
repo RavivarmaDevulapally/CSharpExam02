@@ -1,0 +1,42 @@
+﻿@model Devulapally_Exam02.Models.ProjectInfo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ProjectInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Employees.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Employees.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Projects.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Projects.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AssignmentDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AssignmentDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProjectInfoID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
